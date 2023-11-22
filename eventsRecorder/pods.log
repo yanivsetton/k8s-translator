@@ -1,109 +1,1012 @@
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344090-67bkd.1799e7fb27ff659f","namespace":"default","uid":"66c45961-1eae-471f-93a4-c64110b8d7b5","resourceVersion":"466949617","creationTimestamp":"2023-11-22T09:30:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344090-67bkd","uid":"08a67c86-54cf-454b-b103-9f758d0ad3b5","apiVersion":"v1","resourceVersion":"466949608"},"reason":"Scheduled","message":"Successfully assigned default/check-tokens-28344090-67bkd to ip-192-168-134-241.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T09:30:00Z","lastTimestamp":"2023-11-22T09:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344090-67bkd.1799e7fb4ec2cb7b","namespace":"default","uid":"d97cd7a5-4bf1-49f6-83ed-c45e99faab2c","resourceVersion":"466949627","creationTimestamp":"2023-11-22T09:30:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344090-67bkd","uid":"08a67c86-54cf-454b-b103-9f758d0ad3b5","apiVersion":"v1","resourceVersion":"466949610","fieldPath":"spec.containers{check-tokens}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:00Z","lastTimestamp":"2023-11-22T09:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344090-67bkd.1799e7fb579ab49d","namespace":"default","uid":"aa299d9b-b49e-4917-9339-32d5d8161906","resourceVersion":"466949628","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344090-67bkd","uid":"08a67c86-54cf-454b-b103-9f758d0ad3b5","apiVersion":"v1","resourceVersion":"466949610","fieldPath":"spec.containers{check-tokens}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 148.336199ms (148.350019ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344090-67bkd.1799e7fb59487093","namespace":"default","uid":"8b4044ca-8d70-48c2-a8e6-fb6c0022b7c8","resourceVersion":"466949631","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344090-67bkd","uid":"08a67c86-54cf-454b-b103-9f758d0ad3b5","apiVersion":"v1","resourceVersion":"466949610","fieldPath":"spec.containers{check-tokens}"},"reason":"Created","message":"Created container check-tokens","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344090-67bkd.1799e7fb5c7e13e1","namespace":"default","uid":"92da15b6-c041-4316-8c5f-c2bb483f20d5","resourceVersion":"466949632","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344090-67bkd","uid":"08a67c86-54cf-454b-b103-9f758d0ad3b5","apiVersion":"v1","resourceVersion":"466949610","fieldPath":"spec.containers{check-tokens}"},"reason":"Started","message":"Started container check-tokens","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344120-mj5q6.1799e99e4113a354","namespace":"default","uid":"cde64883-af29-4977-a360-c48ce2123e1e","resourceVersion":"466960644","creationTimestamp":"2023-11-22T10:00:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:00:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344120-mj5q6","uid":"b20f4315-472f-4bd7-a1a5-852c6d441891","apiVersion":"v1","resourceVersion":"466960636"},"reason":"Scheduled","message":"Successfully assigned default/check-tokens-28344120-mj5q6 to ip-192-168-134-241.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T10:00:00Z","lastTimestamp":"2023-11-22T10:00:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344120-mj5q6.1799e99e6780eb15","namespace":"default","uid":"2892de07-ce93-4265-b790-1196448de1e0","resourceVersion":"466960653","creationTimestamp":"2023-11-22T10:00:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:00:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344120-mj5q6","uid":"b20f4315-472f-4bd7-a1a5-852c6d441891","apiVersion":"v1","resourceVersion":"466960640","fieldPath":"spec.containers{check-tokens}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:00:00Z","lastTimestamp":"2023-11-22T10:00:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344120-mj5q6.1799e99e6fb9608e","namespace":"default","uid":"cd815dfa-da45-45fe-99ca-837ae44543c6","resourceVersion":"466960657","creationTimestamp":"2023-11-22T10:00:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:00:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344120-mj5q6","uid":"b20f4315-472f-4bd7-a1a5-852c6d441891","apiVersion":"v1","resourceVersion":"466960640","fieldPath":"spec.containers{check-tokens}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 137.879217ms (137.898348ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:00:00Z","lastTimestamp":"2023-11-22T10:00:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344120-mj5q6.1799e99e719888dc","namespace":"default","uid":"2eed2a5e-722a-4489-af6f-6d504033f142","resourceVersion":"466960658","creationTimestamp":"2023-11-22T10:00:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:00:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344120-mj5q6","uid":"b20f4315-472f-4bd7-a1a5-852c6d441891","apiVersion":"v1","resourceVersion":"466960640","fieldPath":"spec.containers{check-tokens}"},"reason":"Created","message":"Created container check-tokens","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:00:01Z","lastTimestamp":"2023-11-22T10:00:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344120-mj5q6.1799e99e756076bb","namespace":"default","uid":"556fe75b-bc8a-46f7-aeda-3ae94cc715ec","resourceVersion":"466960661","creationTimestamp":"2023-11-22T10:00:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:00:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344120-mj5q6","uid":"b20f4315-472f-4bd7-a1a5-852c6d441891","apiVersion":"v1","resourceVersion":"466960640","fieldPath":"spec.containers{check-tokens}"},"reason":"Started","message":"Started container check-tokens","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:00:01Z","lastTimestamp":"2023-11-22T10:00:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344150-sxnw5.1799eb415a9dd841","namespace":"default","uid":"6664205f-235a-4079-8242-285993eb8b67","resourceVersion":"466971705","creationTimestamp":"2023-11-22T10:30:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344150-sxnw5","uid":"801e6685-121a-4250-9a11-374b9a5ff853","apiVersion":"v1","resourceVersion":"466971696"},"reason":"Scheduled","message":"Successfully assigned default/check-tokens-28344150-sxnw5 to ip-192-168-134-241.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T10:30:00Z","lastTimestamp":"2023-11-22T10:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344150-sxnw5.1799eb4181798a5b","namespace":"default","uid":"72ee9cff-73db-403d-81cf-65f43974319d","resourceVersion":"466971716","creationTimestamp":"2023-11-22T10:30:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344150-sxnw5","uid":"801e6685-121a-4250-9a11-374b9a5ff853","apiVersion":"v1","resourceVersion":"466971702","fieldPath":"spec.containers{check-tokens}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:30:00Z","lastTimestamp":"2023-11-22T10:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344150-sxnw5.1799eb418ad36fc4","namespace":"default","uid":"b89efff3-1d9e-4056-aac3-fdebf6b8cd18","resourceVersion":"466971718","creationTimestamp":"2023-11-22T10:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344150-sxnw5","uid":"801e6685-121a-4250-9a11-374b9a5ff853","apiVersion":"v1","resourceVersion":"466971702","fieldPath":"spec.containers{check-tokens}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 156.861057ms (156.875726ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:30:01Z","lastTimestamp":"2023-11-22T10:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344150-sxnw5.1799eb418ba20227","namespace":"default","uid":"e0025bd0-4b96-4c2f-9db8-75f8e5ed883c","resourceVersion":"466971719","creationTimestamp":"2023-11-22T10:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344150-sxnw5","uid":"801e6685-121a-4250-9a11-374b9a5ff853","apiVersion":"v1","resourceVersion":"466971702","fieldPath":"spec.containers{check-tokens}"},"reason":"Created","message":"Created container check-tokens","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:30:01Z","lastTimestamp":"2023-11-22T10:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"check-tokens-28344150-sxnw5.1799eb418f5c9237","namespace":"default","uid":"6070394d-3337-4532-ad76-eb6ea314d211","resourceVersion":"466971722","creationTimestamp":"2023-11-22T10:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344150-sxnw5","uid":"801e6685-121a-4250-9a11-374b9a5ff853","apiVersion":"v1","resourceVersion":"466971702","fieldPath":"spec.containers{check-tokens}"},"reason":"Started","message":"Started container check-tokens","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:30:01Z","lastTimestamp":"2023-11-22T10:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344090-hpczj.1799e7fb27abe79f","namespace":"default","uid":"f99b0303-b20b-471f-8d2b-3281139ce1f3","resourceVersion":"466949614","creationTimestamp":"2023-11-22T09:30:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344090-hpczj","uid":"d5a7baec-8b5b-4b1a-a6ae-8f9447fcab20","apiVersion":"v1","resourceVersion":"466949607"},"reason":"Scheduled","message":"Successfully assigned default/cron-tasks-30-28344090-hpczj to ip-192-168-134-241.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T09:30:00Z","lastTimestamp":"2023-11-22T09:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344090-hpczj.1799e7fb4d838fe9","namespace":"default","uid":"a3da8132-2ce9-42f0-bea3-f719742e9593","resourceVersion":"466949625","creationTimestamp":"2023-11-22T09:30:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344090-hpczj","uid":"d5a7baec-8b5b-4b1a-a6ae-8f9447fcab20","apiVersion":"v1","resourceVersion":"466949609","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:00Z","lastTimestamp":"2023-11-22T09:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344090-hpczj.1799e7fb57f3b005","namespace":"default","uid":"12715cd5-5785-4be6-806a-f3526f97e94f","resourceVersion":"466949629","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344090-hpczj","uid":"d5a7baec-8b5b-4b1a-a6ae-8f9447fcab20","apiVersion":"v1","resourceVersion":"466949609","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 175.101272ms (175.108962ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344090-hpczj.1799e7fb58edad4c","namespace":"default","uid":"6149ea32-efdf-41c2-8b2f-ac2c5bec7cc1","resourceVersion":"466949630","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344090-hpczj","uid":"d5a7baec-8b5b-4b1a-a6ae-8f9447fcab20","apiVersion":"v1","resourceVersion":"466949609","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Created","message":"Created container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344090-hpczj.1799e7fb5c8875ab","namespace":"default","uid":"e3cf98f4-0c0a-4848-8da9-9b590fcf0387","resourceVersion":"466949633","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344090-hpczj","uid":"d5a7baec-8b5b-4b1a-a6ae-8f9447fcab20","apiVersion":"v1","resourceVersion":"466949609","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Started","message":"Started container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344105-8hbk7.1799e8ccb41ea578","namespace":"default","uid":"9738b4df-a727-42d6-bfa5-5c800034c8e2","resourceVersion":"466955136","creationTimestamp":"2023-11-22T09:45:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:45:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344105-8hbk7","uid":"68f553c9-1de7-4ea8-a971-8c26d77084be","apiVersion":"v1","resourceVersion":"466955132"},"reason":"Scheduled","message":"Successfully assigned default/cron-tasks-30-28344105-8hbk7 to ip-192-168-134-241.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T09:45:00Z","lastTimestamp":"2023-11-22T09:45:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344105-8hbk7.1799e8ccd9f55315","namespace":"default","uid":"71359293-4bc3-4997-a234-aefb5ba981ed","resourceVersion":"466955144","creationTimestamp":"2023-11-22T09:45:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:45:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344105-8hbk7","uid":"68f553c9-1de7-4ea8-a971-8c26d77084be","apiVersion":"v1","resourceVersion":"466955135","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:45:00Z","lastTimestamp":"2023-11-22T09:45:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344105-8hbk7.1799e8cce2852fe6","namespace":"default","uid":"c987f4fb-973a-482e-a18f-a0087fd797be","resourceVersion":"466955145","creationTimestamp":"2023-11-22T09:45:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:45:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344105-8hbk7","uid":"68f553c9-1de7-4ea8-a971-8c26d77084be","apiVersion":"v1","resourceVersion":"466955135","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 143.594785ms (143.611845ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:45:00Z","lastTimestamp":"2023-11-22T09:45:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344105-8hbk7.1799e8cce404ab3c","namespace":"default","uid":"a2333360-0cf6-4bbf-b211-3026e38cdd8e","resourceVersion":"466955146","creationTimestamp":"2023-11-22T09:45:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:45:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344105-8hbk7","uid":"68f553c9-1de7-4ea8-a971-8c26d77084be","apiVersion":"v1","resourceVersion":"466955135","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Created","message":"Created container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:45:01Z","lastTimestamp":"2023-11-22T09:45:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344105-8hbk7.1799e8cce735d0a7","namespace":"default","uid":"fbccaefd-d8f4-4f19-9c4f-bdc5134c269b","resourceVersion":"466955147","creationTimestamp":"2023-11-22T09:45:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:45:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344105-8hbk7","uid":"68f553c9-1de7-4ea8-a971-8c26d77084be","apiVersion":"v1","resourceVersion":"466955135","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Started","message":"Started container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:45:01Z","lastTimestamp":"2023-11-22T09:45:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344120-d7w89.1799e99e418e8cdc","namespace":"default","uid":"c8b8c22b-4d06-451c-ac1b-db3edbbc38b2","resourceVersion":"466960646","creationTimestamp":"2023-11-22T10:00:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:00:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344120-d7w89","uid":"63542a5a-264e-4a2b-b51d-21057a1742dd","apiVersion":"v1","resourceVersion":"466960637"},"reason":"Scheduled","message":"Successfully assigned default/cron-tasks-30-28344120-d7w89 to ip-192-168-134-241.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T10:00:00Z","lastTimestamp":"2023-11-22T10:00:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344120-d7w89.1799e99e687237bb","namespace":"default","uid":"22353c46-9e1a-47b8-a0ef-9c2c113475d4","resourceVersion":"466960654","creationTimestamp":"2023-11-22T10:00:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:00:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344120-d7w89","uid":"63542a5a-264e-4a2b-b51d-21057a1742dd","apiVersion":"v1","resourceVersion":"466960642","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:00:00Z","lastTimestamp":"2023-11-22T10:00:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344120-d7w89.1799e99e71a45b7b","namespace":"default","uid":"a4de0618-0cea-4f12-9e8d-4b1c37b66c49","resourceVersion":"466960659","creationTimestamp":"2023-11-22T10:00:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:00:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344120-d7w89","uid":"63542a5a-264e-4a2b-b51d-21057a1742dd","apiVersion":"v1","resourceVersion":"466960642","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 154.250446ms (154.265915ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:00:01Z","lastTimestamp":"2023-11-22T10:00:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344120-d7w89.1799e99e729da310","namespace":"default","uid":"f3c94b45-2326-489b-9416-ffb4c8e9eaba","resourceVersion":"466960660","creationTimestamp":"2023-11-22T10:00:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:00:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344120-d7w89","uid":"63542a5a-264e-4a2b-b51d-21057a1742dd","apiVersion":"v1","resourceVersion":"466960642","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Created","message":"Created container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:00:01Z","lastTimestamp":"2023-11-22T10:00:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344120-d7w89.1799e99e757164ce","namespace":"default","uid":"ef130bc0-0cfb-4a5d-a81c-3f06eb35339c","resourceVersion":"466960662","creationTimestamp":"2023-11-22T10:00:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:00:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344120-d7w89","uid":"63542a5a-264e-4a2b-b51d-21057a1742dd","apiVersion":"v1","resourceVersion":"466960642","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Started","message":"Started container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:00:01Z","lastTimestamp":"2023-11-22T10:00:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344135-h4nwt.1799ea6fc9aeafa3","namespace":"default","uid":"2d9614db-1b4d-4ee5-8556-af766c2efe72","resourceVersion":"466966197","creationTimestamp":"2023-11-22T10:15:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:15:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344135-h4nwt","uid":"417924f5-c4fa-409c-8183-db2e1eb74033","apiVersion":"v1","resourceVersion":"466966193"},"reason":"Scheduled","message":"Successfully assigned default/cron-tasks-30-28344135-h4nwt to ip-192-168-134-241.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T10:15:00Z","lastTimestamp":"2023-11-22T10:15:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344135-h4nwt.1799ea6ff01c14a7","namespace":"default","uid":"635137c3-73b1-4ea9-a6e6-b3f1be7c8246","resourceVersion":"466966204","creationTimestamp":"2023-11-22T10:15:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:15:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344135-h4nwt","uid":"417924f5-c4fa-409c-8183-db2e1eb74033","apiVersion":"v1","resourceVersion":"466966194","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:15:00Z","lastTimestamp":"2023-11-22T10:15:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344135-h4nwt.1799ea6ffc09352e","namespace":"default","uid":"01f4dd89-c8c6-45b7-9894-a65ce3755f19","resourceVersion":"466966206","creationTimestamp":"2023-11-22T10:15:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:15:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344135-h4nwt","uid":"417924f5-c4fa-409c-8183-db2e1eb74033","apiVersion":"v1","resourceVersion":"466966194","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 200.045164ms (200.064143ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:15:00Z","lastTimestamp":"2023-11-22T10:15:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344135-h4nwt.1799ea6ffd80aa18","namespace":"default","uid":"2db6f52a-72e6-445b-876a-5e4e9fd53b45","resourceVersion":"466966208","creationTimestamp":"2023-11-22T10:15:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:15:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344135-h4nwt","uid":"417924f5-c4fa-409c-8183-db2e1eb74033","apiVersion":"v1","resourceVersion":"466966194","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Created","message":"Created container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:15:01Z","lastTimestamp":"2023-11-22T10:15:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344135-h4nwt.1799ea7001b71632","namespace":"default","uid":"be0a0410-4bd7-44ca-b12e-b34418d0ee68","resourceVersion":"466966209","creationTimestamp":"2023-11-22T10:15:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:15:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344135-h4nwt","uid":"417924f5-c4fa-409c-8183-db2e1eb74033","apiVersion":"v1","resourceVersion":"466966194","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Started","message":"Started container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:15:01Z","lastTimestamp":"2023-11-22T10:15:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344150-n646m.1799eb415a9a91e4","namespace":"default","uid":"a642e10d-58d9-4e42-a4d4-29ec7fe3eb98","resourceVersion":"466971704","creationTimestamp":"2023-11-22T10:30:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344150-n646m","uid":"66ff9182-3f2e-48f9-bfd9-15e47be1c8d6","apiVersion":"v1","resourceVersion":"466971695"},"reason":"Scheduled","message":"Successfully assigned default/cron-tasks-30-28344150-n646m to ip-192-168-134-241.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T10:30:00Z","lastTimestamp":"2023-11-22T10:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344150-n646m.1799eb41817516f5","namespace":"default","uid":"ceb10c0a-5141-4c15-b818-4727e1221c40","resourceVersion":"466971715","creationTimestamp":"2023-11-22T10:30:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344150-n646m","uid":"66ff9182-3f2e-48f9-bfd9-15e47be1c8d6","apiVersion":"v1","resourceVersion":"466971699","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:30:00Z","lastTimestamp":"2023-11-22T10:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344150-n646m.1799eb418a8102e9","namespace":"default","uid":"1b60275e-64b8-4640-94a3-1099fe8c04c8","resourceVersion":"466971717","creationTimestamp":"2023-11-22T10:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344150-n646m","uid":"66ff9182-3f2e-48f9-bfd9-15e47be1c8d6","apiVersion":"v1","resourceVersion":"466971699","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 151.743614ms (151.760674ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:30:01Z","lastTimestamp":"2023-11-22T10:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344150-n646m.1799eb418c9eb65a","namespace":"default","uid":"0c3fce38-8a83-425b-a148-de47aa40b89c","resourceVersion":"466971720","creationTimestamp":"2023-11-22T10:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344150-n646m","uid":"66ff9182-3f2e-48f9-bfd9-15e47be1c8d6","apiVersion":"v1","resourceVersion":"466971699","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Created","message":"Created container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:30:01Z","lastTimestamp":"2023-11-22T10:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"cron-tasks-30-28344150-n646m.1799eb418f530bf7","namespace":"default","uid":"1291cb87-a116-4fd1-bf4b-3bee2a4afa8b","resourceVersion":"466971721","creationTimestamp":"2023-11-22T10:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344150-n646m","uid":"66ff9182-3f2e-48f9-bfd9-15e47be1c8d6","apiVersion":"v1","resourceVersion":"466971699","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Started","message":"Started container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T10:30:01Z","lastTimestamp":"2023-11-22T10:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"whatsapp-tokens-28344121-6kqhx.1799e9ac36f3337d","namespace":"default","uid":"19170eed-bfb5-498f-a52a-f76645f4d837","resourceVersion":"466961068","creationTimestamp":"2023-11-22T10:01:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:01:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"whatsapp-tokens-28344121-6kqhx","uid":"a1141c20-1745-4670-a66d-7442b5a518ea","apiVersion":"v1","resourceVersion":"466961064"},"reason":"Scheduled","message":"Successfully assigned default/whatsapp-tokens-28344121-6kqhx to ip-192-168-248-135.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T10:01:00Z","lastTimestamp":"2023-11-22T10:01:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"whatsapp-tokens-28344121-6kqhx.1799e9ac621cd460","namespace":"default","uid":"9ffd158c-df79-4eef-bda4-bfde170a28f6","resourceVersion":"466961076","creationTimestamp":"2023-11-22T10:01:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:01:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"whatsapp-tokens-28344121-6kqhx","uid":"a1141c20-1745-4670-a66d-7442b5a518ea","apiVersion":"v1","resourceVersion":"466961067","fieldPath":"spec.containers{check-tokens}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-248-135.ec2.internal"},"firstTimestamp":"2023-11-22T10:01:00Z","lastTimestamp":"2023-11-22T10:01:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"whatsapp-tokens-28344121-6kqhx.1799e9ac6a70404e","namespace":"default","uid":"261e1994-3786-400b-bc78-970f510de9b5","resourceVersion":"466961078","creationTimestamp":"2023-11-22T10:01:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:01:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"whatsapp-tokens-28344121-6kqhx","uid":"a1141c20-1745-4670-a66d-7442b5a518ea","apiVersion":"v1","resourceVersion":"466961067","fieldPath":"spec.containers{check-tokens}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 139.653735ms (139.665875ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-248-135.ec2.internal"},"firstTimestamp":"2023-11-22T10:01:01Z","lastTimestamp":"2023-11-22T10:01:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"whatsapp-tokens-28344121-6kqhx.1799e9ac6c1becae","namespace":"default","uid":"d8c9a364-5770-4d22-9e94-c0977d4b3723","resourceVersion":"466961079","creationTimestamp":"2023-11-22T10:01:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:01:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"whatsapp-tokens-28344121-6kqhx","uid":"a1141c20-1745-4670-a66d-7442b5a518ea","apiVersion":"v1","resourceVersion":"466961067","fieldPath":"spec.containers{check-tokens}"},"reason":"Created","message":"Created container check-tokens","source":{"component":"kubelet","host":"ip-192-168-248-135.ec2.internal"},"firstTimestamp":"2023-11-22T10:01:01Z","lastTimestamp":"2023-11-22T10:01:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"ADDED","Object":{"metadata":{"name":"whatsapp-tokens-28344121-6kqhx.1799e9ac70ecbd2d","namespace":"default","uid":"e7332d56-033b-4e7c-b61a-445c1fa82eb4","resourceVersion":"466961082","creationTimestamp":"2023-11-22T10:01:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T10:01:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"whatsapp-tokens-28344121-6kqhx","uid":"a1141c20-1745-4670-a66d-7442b5a518ea","apiVersion":"v1","resourceVersion":"466961067","fieldPath":"spec.containers{check-tokens}"},"reason":"Started","message":"Started container check-tokens","source":{"component":"kubelet","host":"ip-192-168-248-135.ec2.internal"},"firstTimestamp":"2023-11-22T10:01:01Z","lastTimestamp":"2023-11-22T10:01:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"DELETED","Object":{"metadata":{"name":"check-tokens-28344090-67bkd.1799e7fb27ff659f","namespace":"default","uid":"66c45961-1eae-471f-93a4-c64110b8d7b5","resourceVersion":"466972107","creationTimestamp":"2023-11-22T09:30:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344090-67bkd","uid":"08a67c86-54cf-454b-b103-9f758d0ad3b5","apiVersion":"v1","resourceVersion":"466949608"},"reason":"Scheduled","message":"Successfully assigned default/check-tokens-28344090-67bkd to ip-192-168-134-241.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T09:30:00Z","lastTimestamp":"2023-11-22T09:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"DELETED","Object":{"metadata":{"name":"cron-tasks-30-28344090-hpczj.1799e7fb27abe79f","namespace":"default","uid":"f99b0303-b20b-471f-8d2b-3281139ce1f3","resourceVersion":"466972107","creationTimestamp":"2023-11-22T09:30:00Z","managedFields":[{"manager":"kube-scheduler","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:reportingComponent":{},"f:source":{"f:component":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344090-hpczj","uid":"d5a7baec-8b5b-4b1a-a6ae-8f9447fcab20","apiVersion":"v1","resourceVersion":"466949607"},"reason":"Scheduled","message":"Successfully assigned default/cron-tasks-30-28344090-hpczj to ip-192-168-134-241.ec2.internal","source":{"component":"default-scheduler"},"firstTimestamp":"2023-11-22T09:30:00Z","lastTimestamp":"2023-11-22T09:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"default-scheduler","reportingInstance":""}}
-
-Received: {"Type":"DELETED","Object":{"metadata":{"name":"check-tokens-28344090-67bkd.1799e7fb4ec2cb7b","namespace":"default","uid":"d97cd7a5-4bf1-49f6-83ed-c45e99faab2c","resourceVersion":"466972112","creationTimestamp":"2023-11-22T09:30:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344090-67bkd","uid":"08a67c86-54cf-454b-b103-9f758d0ad3b5","apiVersion":"v1","resourceVersion":"466949610","fieldPath":"spec.containers{check-tokens}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:00Z","lastTimestamp":"2023-11-22T09:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"DELETED","Object":{"metadata":{"name":"check-tokens-28344090-67bkd.1799e7fb579ab49d","namespace":"default","uid":"aa299d9b-b49e-4917-9339-32d5d8161906","resourceVersion":"466972112","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344090-67bkd","uid":"08a67c86-54cf-454b-b103-9f758d0ad3b5","apiVersion":"v1","resourceVersion":"466949610","fieldPath":"spec.containers{check-tokens}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 148.336199ms (148.350019ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"DELETED","Object":{"metadata":{"name":"check-tokens-28344090-67bkd.1799e7fb59487093","namespace":"default","uid":"8b4044ca-8d70-48c2-a8e6-fb6c0022b7c8","resourceVersion":"466972112","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344090-67bkd","uid":"08a67c86-54cf-454b-b103-9f758d0ad3b5","apiVersion":"v1","resourceVersion":"466949610","fieldPath":"spec.containers{check-tokens}"},"reason":"Created","message":"Created container check-tokens","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"DELETED","Object":{"metadata":{"name":"check-tokens-28344090-67bkd.1799e7fb5c7e13e1","namespace":"default","uid":"92da15b6-c041-4316-8c5f-c2bb483f20d5","resourceVersion":"466972112","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"check-tokens-28344090-67bkd","uid":"08a67c86-54cf-454b-b103-9f758d0ad3b5","apiVersion":"v1","resourceVersion":"466949610","fieldPath":"spec.containers{check-tokens}"},"reason":"Started","message":"Started container check-tokens","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"DELETED","Object":{"metadata":{"name":"cron-tasks-30-28344090-hpczj.1799e7fb4d838fe9","namespace":"default","uid":"a3da8132-2ce9-42f0-bea3-f719742e9593","resourceVersion":"466972112","creationTimestamp":"2023-11-22T09:30:00Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:00Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344090-hpczj","uid":"d5a7baec-8b5b-4b1a-a6ae-8f9447fcab20","apiVersion":"v1","resourceVersion":"466949609","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulling","message":"Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:00Z","lastTimestamp":"2023-11-22T09:30:00Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"DELETED","Object":{"metadata":{"name":"cron-tasks-30-28344090-hpczj.1799e7fb57f3b005","namespace":"default","uid":"12715cd5-5785-4be6-806a-f3526f97e94f","resourceVersion":"466972112","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344090-hpczj","uid":"d5a7baec-8b5b-4b1a-a6ae-8f9447fcab20","apiVersion":"v1","resourceVersion":"466949609","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Pulled","message":"Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 175.101272ms (175.108962ms including waiting)","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"DELETED","Object":{"metadata":{"name":"cron-tasks-30-28344090-hpczj.1799e7fb58edad4c","namespace":"default","uid":"6149ea32-efdf-41c2-8b2f-ac2c5bec7cc1","resourceVersion":"466972112","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344090-hpczj","uid":"d5a7baec-8b5b-4b1a-a6ae-8f9447fcab20","apiVersion":"v1","resourceVersion":"466949609","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Created","message":"Created container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
-
-Received: {"Type":"DELETED","Object":{"metadata":{"name":"cron-tasks-30-28344090-hpczj.1799e7fb5c8875ab","namespace":"default","uid":"e3cf98f4-0c0a-4848-8da9-9b590fcf0387","resourceVersion":"466972112","creationTimestamp":"2023-11-22T09:30:01Z","managedFields":[{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2023-11-22T09:30:01Z","fieldsType":"FieldsV1","fieldsV1":{"f:count":{},"f:firstTimestamp":{},"f:involvedObject":{},"f:lastTimestamp":{},"f:message":{},"f:reason":{},"f:source":{"f:component":{},"f:host":{}},"f:type":{}}}]},"involvedObject":{"kind":"Pod","namespace":"default","name":"cron-tasks-30-28344090-hpczj","uid":"d5a7baec-8b5b-4b1a-a6ae-8f9447fcab20","apiVersion":"v1","resourceVersion":"466949609","fieldPath":"spec.containers{cron-tasks-30}"},"reason":"Started","message":"Started container cron-tasks-30","source":{"component":"kubelet","host":"ip-192-168-134-241.ec2.internal"},"firstTimestamp":"2023-11-22T09:30:01Z","lastTimestamp":"2023-11-22T09:30:01Z","count":1,"type":"Normal","eventTime":null,"reportingComponent":"","reportingInstance":""}}
+      "resourceVersion": "466966209",
+      "creationTimestamp": "2023-11-22T10:15:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:15:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344135-h4nwt",
+      "uid": "417924f5-c4fa-409c-8183-db2e1eb74033",
+      "apiVersion": "v1",
+      "resourceVersion": "466966194",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Started",
+    "message": "Started container cron-tasks-30",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:15:01Z",
+    "lastTimestamp": "2023-11-22T10:15:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb418c9eb65a",
+      "namespace": "default",
+      "uid": "0c3fce38-8a83-425b-a148-de47aa40b89c",
+      "resourceVersion": "466971720",
+      "creationTimestamp": "2023-11-22T10:30:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Created",
+    "message": "Created container cron-tasks-30",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:01Z",
+    "lastTimestamp": "2023-11-22T10:30:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb415a9a91e4",
+      "namespace": "default",
+      "uid": "a642e10d-58d9-4e42-a4d4-29ec7fe3eb98",
+      "resourceVersion": "466971704",
+      "creationTimestamp": "2023-11-22T10:30:00Z",
+      "managedFields": [
+        {
+          "manager": "kube-scheduler",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:reportingComponent": {},
+            "f:source": {
+              "f:component": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971695"
+    },
+    "reason": "Scheduled",
+    "message": "Successfully assigned default/cron-tasks-30-28344150-n646m to ip-192-168-134-241.ec2.internal",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "firstTimestamp": "2023-11-22T10:30:00Z",
+    "lastTimestamp": "2023-11-22T10:30:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb418f530bf7",
+      "namespace": "default",
+      "uid": "1291cb87-a116-4fd1-bf4b-3bee2a4afa8b",
+      "resourceVersion": "466971721",
+      "creationTimestamp": "2023-11-22T10:30:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Started",
+    "message": "Started container cron-tasks-30",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:01Z",
+    "lastTimestamp": "2023-11-22T10:30:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac36f3337d",
+      "namespace": "default",
+      "uid": "19170eed-bfb5-498f-a52a-f76645f4d837",
+      "resourceVersion": "466961068",
+      "creationTimestamp": "2023-11-22T10:01:00Z",
+      "managedFields": [
+        {
+          "manager": "kube-scheduler",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:reportingComponent": {},
+            "f:source": {
+              "f:component": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961064"
+    },
+    "reason": "Scheduled",
+    "message": "Successfully assigned default/whatsapp-tokens-28344121-6kqhx to ip-192-168-248-135.ec2.internal",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "firstTimestamp": "2023-11-22T10:01:00Z",
+    "lastTimestamp": "2023-11-22T10:01:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb41817516f5",
+      "namespace": "default",
+      "uid": "ceb10c0a-5141-4c15-b818-4727e1221c40",
+      "resourceVersion": "466971715",
+      "creationTimestamp": "2023-11-22T10:30:00Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Pulling",
+    "message": "Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:00Z",
+    "lastTimestamp": "2023-11-22T10:30:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb418a8102e9",
+      "namespace": "default",
+      "uid": "1b60275e-64b8-4640-94a3-1099fe8c04c8",
+      "resourceVersion": "466971717",
+      "creationTimestamp": "2023-11-22T10:30:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Pulled",
+    "message": "Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 151.743614ms (151.760674ms including waiting)",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:01Z",
+    "lastTimestamp": "2023-11-22T10:30:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac621cd460",
+      "namespace": "default",
+      "uid": "9ffd158c-df79-4eef-bda4-bfde170a28f6",
+      "resourceVersion": "466961076",
+      "creationTimestamp": "2023-11-22T10:01:00Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Pulling",
+    "message": "Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:00Z",
+    "lastTimestamp": "2023-11-22T10:01:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb418c9eb65a",
+      "namespace": "default",
+      "uid": "0c3fce38-8a83-425b-a148-de47aa40b89c",
+      "resourceVersion": "466971720",
+      "creationTimestamp": "2023-11-22T10:30:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Created",
+    "message": "Created container cron-tasks-30",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:01Z",
+    "lastTimestamp": "2023-11-22T10:30:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac6a70404e",
+      "namespace": "default",
+      "uid": "261e1994-3786-400b-bc78-970f510de9b5",
+      "resourceVersion": "466961078",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Pulled",
+    "message": "Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 139.653735ms (139.665875ms including waiting)",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb418f530bf7",
+      "namespace": "default",
+      "uid": "1291cb87-a116-4fd1-bf4b-3bee2a4afa8b",
+      "resourceVersion": "466971721",
+      "creationTimestamp": "2023-11-22T10:30:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Started",
+    "message": "Started container cron-tasks-30",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:01Z",
+    "lastTimestamp": "2023-11-22T10:30:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac6c1becae",
+      "namespace": "default",
+      "uid": "d8c9a364-5770-4d22-9e94-c0977d4b3723",
+      "resourceVersion": "466961079",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Created",
+    "message": "Created container check-tokens",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac36f3337d",
+      "namespace": "default",
+      "uid": "19170eed-bfb5-498f-a52a-f76645f4d837",
+      "resourceVersion": "466961068",
+      "creationTimestamp": "2023-11-22T10:01:00Z",
+      "managedFields": [
+        {
+          "manager": "kube-scheduler",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:reportingComponent": {},
+            "f:source": {
+              "f:component": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961064"
+    },
+    "reason": "Scheduled",
+    "message": "Successfully assigned default/whatsapp-tokens-28344121-6kqhx to ip-192-168-248-135.ec2.internal",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "firstTimestamp": "2023-11-22T10:01:00Z",
+    "lastTimestamp": "2023-11-22T10:01:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac70ecbd2d",
+      "namespace": "default",
+      "uid": "e7332d56-033b-4e7c-b61a-445c1fa82eb4",
+      "resourceVersion": "466961082",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Started",
+    "message": "Started container check-tokens",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac621cd460",
+      "namespace": "default",
+      "uid": "9ffd158c-df79-4eef-bda4-bfde170a28f6",
+      "resourceVersion": "466961076",
+      "creationTimestamp": "2023-11-22T10:01:00Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Pulling",
+    "message": "Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:00Z",
+    "lastTimestamp": "2023-11-22T10:01:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac6a70404e",
+      "namespace": "default",
+      "uid": "261e1994-3786-400b-bc78-970f510de9b5",
+      "resourceVersion": "466961078",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Pulled",
+    "message": "Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 139.653735ms (139.665875ms including waiting)",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac6c1becae",
+      "namespace": "default",
+      "uid": "d8c9a364-5770-4d22-9e94-c0977d4b3723",
+      "resourceVersion": "466961079",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Created",
+    "message": "Created container check-tokens",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac70ecbd2d",
+      "namespace": "default",
+      "uid": "e7332d56-033b-4e7c-b61a-445c1fa82eb4",
+      "resourceVersion": "466961082",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Started",
+    "message": "Started container check-tokens",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
