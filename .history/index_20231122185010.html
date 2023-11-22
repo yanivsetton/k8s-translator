@@ -52,10 +52,15 @@
             align-items: center;
         }
 
-        select#serviceSelect {
+        .input {
             color: #0f0;
-            background-color: #000;
             border: none;
+            background-color: #000;
+            width: 100%;
+        }
+
+        .input:focus {
+            outline: none;
         }
 
         .error {
@@ -89,6 +94,10 @@
             cursor: not-allowed;
         }
 
+        select {
+            display: none;
+        }
+
         label {
             color: #0f0;
             font-size: 18px;
@@ -105,21 +114,22 @@
         <div id="messages"></div>
         <div class="command-line">
             <label for="serviceSelect">Service:</label>
-            <select id="serviceSelect">
-                <option value="AutoScale">AutoScale</option>
-                <option value="Secrets">Secrets</option>
-                <option value="Deployments">Deployments</option>
-                <option value="Ingress">Ingress</option>
-                <option value="Jobs and CronJobs">Jobs and CronJobs</option>
-                <option value="Main">Main</option>
-                <option value="Nodes">Nodes</option>
-                <option value="Pods">Pods</option>
-                <option value="PV">PV</option>
-                <option value="RC and Stateful">RC and Stateful</option>
-                <option value="Resource and Limits">Resource and Limits</option>
-                <option value="Services">Services</option>
+            <input type="text" id="commandInput" list="services" autocomplete="off" readonly>
+            <datalist id="services">
+                <option value="AutoScale">
+                <option value="Secrets">
+                <option value="Deployments">
+                <option value="Ingress">
+                <option value="Jobs and CronJobs">
+                <option value="Main">
+                <option value="Nodes">
+                <option value="Pods">
+                <option value="PV">
+                <option value="RC and Stateful">
+                <option value="Resource and Limits">
+                <option value="Services">
                 <!-- Add more service options here -->
-            </select>
+            </datalist>
         </div>
         <footer>
             <p>Status: <span id="status">Connecting...</span></p>
@@ -132,7 +142,7 @@
         // Your JavaScript code goes here
         var ws;
         var messagesDiv = document.getElementById("messages");
-        var serviceSelect = document.getElementById("serviceSelect");
+        var commandInput = document.getElementById("commandInput");
         var statusSpan = document.getElementById("status");
         var pauseButton = document.getElementById("pauseButton");
         var resumeButton = document.getElementById("resumeButton");
@@ -145,8 +155,8 @@
             // Clear logs when changing services
             clearLogs();
 
-            // Get the selected service from the dropdown
-            var selectedService = serviceSelect.value;
+            // Get the selected service from the input field
+            var selectedService = commandInput.value.trim();
 
             // Construct the WebSocket URL based on the selected service
             var wsUrl = "ws://localhost:" + getServicePort(selectedService) + "/ws";
@@ -220,13 +230,12 @@
             return portMap[serviceName] || 7000; // Default port if not found
         }
 
-        // Event listener for serviceSelect dropdown
-        serviceSelect.addEventListener("change", function() {
-            // Disconnect the current WebSocket and connect to the selected service
-            if (ws) {
-                ws.close();
+        // Event listener for Enter key in command input
+        commandInput.addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                // Connect when Enter key is pressed
+                connectWebSocket();
             }
-            connectWebSocket();
         });
 
         // Event listeners for pause and resume buttons

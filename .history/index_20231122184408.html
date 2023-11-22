@@ -4,11 +4,10 @@
     <title>WebSocket JSON Logs Viewer</title>
     <style>
         body {
-            font-family: 'Courier New', monospace;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #fff;
+            background-color: #f5f5f5;
         }
 
         header {
@@ -16,7 +15,6 @@
             color: white;
             text-align: center;
             padding: 20px 0;
-            font-size: 24px;
         }
 
         h1 {
@@ -27,52 +25,49 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #000;
+            background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         #messages {
-            border: 1px solid #333;
+            border: 1px solid #ddd;
             margin: 10px 0;
             padding: 10px;
             height: 500px;
             overflow: auto;
-            background-color: #000;
-            color: #fff;
-            font-family: 'Courier New', monospace;
         }
 
-        .command-line {
-            background-color: #000;
+        #serviceSelect {
+            margin: 10px 0;
             padding: 5px;
-            border: 1px solid #333;
-            border-radius: 5px;
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
+            width: 100%;
         }
 
-        select#serviceSelect {
-            color: #0f0;
-            background-color: #000;
-            border: none;
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #status {
+            flex-grow: 1;
         }
 
         .error {
-            color: #f00;
+            color: red;
         }
 
         .info {
-            color: #00f;
+            color: green;
         }
 
         .warning {
-            color: #ff0;
+            color: orange;
         }
 
         .json {
             white-space: pre;
-            color: #fff;
         }
 
         button {
@@ -88,12 +83,6 @@
             background-color: #ccc;
             cursor: not-allowed;
         }
-
-        label {
-            color: #0f0;
-            font-size: 18px;
-            margin-right: 10px;
-        }
     </style>
 </head>
 <body>
@@ -102,25 +91,23 @@
     </header>
     
     <div id="container">
+        <!-- Service Selection Dropdown -->
+        <select id="serviceSelect">
+            <option value="service1">AutoScale</option>
+            <option value="service2">Secrets</option>
+            <option value="service3">Deployments</option>
+            <option value="service4">Ingress</option>
+            <option value="service5">Jobs and CronJobs</option>
+            <option value="service6">Main</option>
+            <option value="service7">Nodes</option>
+            <option value="service8">Pods</option>
+            <option value="service9">PV</option>
+            <option value="service10">RC and Stateful</option>
+            <option value="service11">Resource and Limits</option>
+            <option value="service12">Services</option>
+        </select>
+
         <div id="messages"></div>
-        <div class="command-line">
-            <label for="serviceSelect">Service:</label>
-            <select id="serviceSelect">
-                <option value="AutoScale">AutoScale</option>
-                <option value="Secrets">Secrets</option>
-                <option value="Deployments">Deployments</option>
-                <option value="Ingress">Ingress</option>
-                <option value="Jobs and CronJobs">Jobs and CronJobs</option>
-                <option value="Main">Main</option>
-                <option value="Nodes">Nodes</option>
-                <option value="Pods">Pods</option>
-                <option value="PV">PV</option>
-                <option value="RC and Stateful">RC and Stateful</option>
-                <option value="Resource and Limits">Resource and Limits</option>
-                <option value="Services">Services</option>
-                <!-- Add more service options here -->
-            </select>
-        </div>
         <footer>
             <p>Status: <span id="status">Connecting...</span></p>
             <button id="pauseButton" disabled>Pause</button>
@@ -202,18 +189,18 @@
         function getServicePort(serviceName) {
             // Define the port mapping for your services
             var portMap = {
-                "AutoScale": 7001,
-                "Secrets": 7002,
-                "Deployments": 7003,
-                "Ingress": 7004,
-                "Jobs and CronJobs": 7005,
-                "Main": 7006,
-                "Nodes": 7007,
-                "Pods": 7008,
-                "PV": 7009,
-                "RC and Stateful": 7010,
-                "Resource and Limits": 7011,
-                "Services": 7012,
+                "service1": 7001,
+                "service2": 7002,
+                "service3": 7003,
+                "service4": 7004,
+                "service5": 7005,
+                "service6": 7006,
+                "service7": 7007,
+                "service8": 7008,
+                "service9": 7009,
+                "service10": 7010,
+                "service11": 7011,
+                "service12": 7012,
                 // Add port mappings for your other services here
             };
 
