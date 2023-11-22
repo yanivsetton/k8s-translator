@@ -1,0 +1,1012 @@
+      "resourceVersion": "466966209",
+      "creationTimestamp": "2023-11-22T10:15:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:15:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344135-h4nwt",
+      "uid": "417924f5-c4fa-409c-8183-db2e1eb74033",
+      "apiVersion": "v1",
+      "resourceVersion": "466966194",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Started",
+    "message": "Started container cron-tasks-30",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:15:01Z",
+    "lastTimestamp": "2023-11-22T10:15:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb418c9eb65a",
+      "namespace": "default",
+      "uid": "0c3fce38-8a83-425b-a148-de47aa40b89c",
+      "resourceVersion": "466971720",
+      "creationTimestamp": "2023-11-22T10:30:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Created",
+    "message": "Created container cron-tasks-30",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:01Z",
+    "lastTimestamp": "2023-11-22T10:30:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb415a9a91e4",
+      "namespace": "default",
+      "uid": "a642e10d-58d9-4e42-a4d4-29ec7fe3eb98",
+      "resourceVersion": "466971704",
+      "creationTimestamp": "2023-11-22T10:30:00Z",
+      "managedFields": [
+        {
+          "manager": "kube-scheduler",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:reportingComponent": {},
+            "f:source": {
+              "f:component": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971695"
+    },
+    "reason": "Scheduled",
+    "message": "Successfully assigned default/cron-tasks-30-28344150-n646m to ip-192-168-134-241.ec2.internal",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "firstTimestamp": "2023-11-22T10:30:00Z",
+    "lastTimestamp": "2023-11-22T10:30:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb418f530bf7",
+      "namespace": "default",
+      "uid": "1291cb87-a116-4fd1-bf4b-3bee2a4afa8b",
+      "resourceVersion": "466971721",
+      "creationTimestamp": "2023-11-22T10:30:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Started",
+    "message": "Started container cron-tasks-30",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:01Z",
+    "lastTimestamp": "2023-11-22T10:30:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac36f3337d",
+      "namespace": "default",
+      "uid": "19170eed-bfb5-498f-a52a-f76645f4d837",
+      "resourceVersion": "466961068",
+      "creationTimestamp": "2023-11-22T10:01:00Z",
+      "managedFields": [
+        {
+          "manager": "kube-scheduler",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:reportingComponent": {},
+            "f:source": {
+              "f:component": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961064"
+    },
+    "reason": "Scheduled",
+    "message": "Successfully assigned default/whatsapp-tokens-28344121-6kqhx to ip-192-168-248-135.ec2.internal",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "firstTimestamp": "2023-11-22T10:01:00Z",
+    "lastTimestamp": "2023-11-22T10:01:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb41817516f5",
+      "namespace": "default",
+      "uid": "ceb10c0a-5141-4c15-b818-4727e1221c40",
+      "resourceVersion": "466971715",
+      "creationTimestamp": "2023-11-22T10:30:00Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Pulling",
+    "message": "Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:00Z",
+    "lastTimestamp": "2023-11-22T10:30:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb418a8102e9",
+      "namespace": "default",
+      "uid": "1b60275e-64b8-4640-94a3-1099fe8c04c8",
+      "resourceVersion": "466971717",
+      "creationTimestamp": "2023-11-22T10:30:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Pulled",
+    "message": "Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 151.743614ms (151.760674ms including waiting)",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:01Z",
+    "lastTimestamp": "2023-11-22T10:30:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac621cd460",
+      "namespace": "default",
+      "uid": "9ffd158c-df79-4eef-bda4-bfde170a28f6",
+      "resourceVersion": "466961076",
+      "creationTimestamp": "2023-11-22T10:01:00Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Pulling",
+    "message": "Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:00Z",
+    "lastTimestamp": "2023-11-22T10:01:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb418c9eb65a",
+      "namespace": "default",
+      "uid": "0c3fce38-8a83-425b-a148-de47aa40b89c",
+      "resourceVersion": "466971720",
+      "creationTimestamp": "2023-11-22T10:30:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Created",
+    "message": "Created container cron-tasks-30",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:01Z",
+    "lastTimestamp": "2023-11-22T10:30:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac6a70404e",
+      "namespace": "default",
+      "uid": "261e1994-3786-400b-bc78-970f510de9b5",
+      "resourceVersion": "466961078",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Pulled",
+    "message": "Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 139.653735ms (139.665875ms including waiting)",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "cron-tasks-30-28344150-n646m.1799eb418f530bf7",
+      "namespace": "default",
+      "uid": "1291cb87-a116-4fd1-bf4b-3bee2a4afa8b",
+      "resourceVersion": "466971721",
+      "creationTimestamp": "2023-11-22T10:30:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:30:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "cron-tasks-30-28344150-n646m",
+      "uid": "66ff9182-3f2e-48f9-bfd9-15e47be1c8d6",
+      "apiVersion": "v1",
+      "resourceVersion": "466971699",
+      "fieldPath": "spec.containers{cron-tasks-30}"
+    },
+    "reason": "Started",
+    "message": "Started container cron-tasks-30",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-134-241.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:30:01Z",
+    "lastTimestamp": "2023-11-22T10:30:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac6c1becae",
+      "namespace": "default",
+      "uid": "d8c9a364-5770-4d22-9e94-c0977d4b3723",
+      "resourceVersion": "466961079",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Created",
+    "message": "Created container check-tokens",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac36f3337d",
+      "namespace": "default",
+      "uid": "19170eed-bfb5-498f-a52a-f76645f4d837",
+      "resourceVersion": "466961068",
+      "creationTimestamp": "2023-11-22T10:01:00Z",
+      "managedFields": [
+        {
+          "manager": "kube-scheduler",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:reportingComponent": {},
+            "f:source": {
+              "f:component": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961064"
+    },
+    "reason": "Scheduled",
+    "message": "Successfully assigned default/whatsapp-tokens-28344121-6kqhx to ip-192-168-248-135.ec2.internal",
+    "source": {
+      "component": "default-scheduler"
+    },
+    "firstTimestamp": "2023-11-22T10:01:00Z",
+    "lastTimestamp": "2023-11-22T10:01:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "default-scheduler",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac70ecbd2d",
+      "namespace": "default",
+      "uid": "e7332d56-033b-4e7c-b61a-445c1fa82eb4",
+      "resourceVersion": "466961082",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Started",
+    "message": "Started container check-tokens",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac621cd460",
+      "namespace": "default",
+      "uid": "9ffd158c-df79-4eef-bda4-bfde170a28f6",
+      "resourceVersion": "466961076",
+      "creationTimestamp": "2023-11-22T10:01:00Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:00Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Pulling",
+    "message": "Pulling image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\"",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:00Z",
+    "lastTimestamp": "2023-11-22T10:01:00Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac6a70404e",
+      "namespace": "default",
+      "uid": "261e1994-3786-400b-bc78-970f510de9b5",
+      "resourceVersion": "466961078",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Pulled",
+    "message": "Successfully pulled image \"157980219282.dkr.ecr.us-east-1.amazonaws.com/imcommon:production\" in 139.653735ms (139.665875ms including waiting)",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac6c1becae",
+      "namespace": "default",
+      "uid": "d8c9a364-5770-4d22-9e94-c0977d4b3723",
+      "resourceVersion": "466961079",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Created",
+    "message": "Created container check-tokens",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}
+Event received:
+{
+  "Type": "ADDED",
+  "Object": {
+    "metadata": {
+      "name": "whatsapp-tokens-28344121-6kqhx.1799e9ac70ecbd2d",
+      "namespace": "default",
+      "uid": "e7332d56-033b-4e7c-b61a-445c1fa82eb4",
+      "resourceVersion": "466961082",
+      "creationTimestamp": "2023-11-22T10:01:01Z",
+      "managedFields": [
+        {
+          "manager": "kubelet",
+          "operation": "Update",
+          "apiVersion": "v1",
+          "time": "2023-11-22T10:01:01Z",
+          "fieldsType": "FieldsV1",
+          "fieldsV1": {
+            "f:count": {},
+            "f:firstTimestamp": {},
+            "f:involvedObject": {},
+            "f:lastTimestamp": {},
+            "f:message": {},
+            "f:reason": {},
+            "f:source": {
+              "f:component": {},
+              "f:host": {}
+            },
+            "f:type": {}
+          }
+        }
+      ]
+    },
+    "involvedObject": {
+      "kind": "Pod",
+      "namespace": "default",
+      "name": "whatsapp-tokens-28344121-6kqhx",
+      "uid": "a1141c20-1745-4670-a66d-7442b5a518ea",
+      "apiVersion": "v1",
+      "resourceVersion": "466961067",
+      "fieldPath": "spec.containers{check-tokens}"
+    },
+    "reason": "Started",
+    "message": "Started container check-tokens",
+    "source": {
+      "component": "kubelet",
+      "host": "ip-192-168-248-135.ec2.internal"
+    },
+    "firstTimestamp": "2023-11-22T10:01:01Z",
+    "lastTimestamp": "2023-11-22T10:01:01Z",
+    "count": 1,
+    "type": "Normal",
+    "eventTime": null,
+    "reportingComponent": "",
+    "reportingInstance": ""
+  }
+}

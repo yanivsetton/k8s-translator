@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Test</title>
+</head>
+<body>
+    <h1>WebSocket Client</h1>
+    <div id="messages"></div>
+
+    <script>
+        var socket;
+    
+        function connectWebSocket() {
+            socket = new WebSocket("ws://localhost:8080/ws");
+    
+            socket.onopen = function() {
+                console.log("Connected to WebSocket");
+            };
+    
+            socket.onmessage = function(event) {
+                console.log("Received: " + event.data);
+            };
+    
+            socket.onclose = function() {
+                console.log("Disconnected from WebSocket, attempting to reconnect...");
+                setTimeout(connectWebSocket, 5000); // Attempt to reconnect after 5 seconds
+            };
+    
+            socket.onerror = function(error) {
+                console.error("WebSocket Error", error);
+            };
+        }
+    
+        connectWebSocket();
+    </script>
+</body>
+</html>
