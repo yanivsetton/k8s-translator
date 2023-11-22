@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket JSON Logs Viewer</title>
+    <style>
+        #messages {
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 10px;
+            height: 200px;
+            overflow: auto;
+        }
+
+        #serviceSelect {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WebSocket JSON Logs Viewer</h1>
+    </header>
+    
+    <!-- Service Selection Dropdown -->
+    <select id="serviceSelect">
+        <option value="service1">Service 1</option>
+        <option value="service2">Service 2</option>
+        <!-- Add options for your 12 services here -->
+    </select>
+
+    <div id="messages"></div>
+    <footer>
+        <p>Status: <span id="status">Connecting...</span></p>
+        <button id="pauseButton">Pause</button>
+        <button id="resumeButton">Resume</button>
+    </footer>
+
+    <script>
+        var ws;
+        var messagesDiv = document.getElementById("messages");
+        var statusSpan = document.getElementById("status");
+        var serviceSelect = document.getElementById("serviceSelect");
+        var pauseButton = document.getElementById("pauseButton");
+        var resumeButton = document.getElementById("resumeButton");
+
+        // WebSocket server URLs for each service
+        var wsUrls = {
+            service1: "ws://localhost:7008/ws",
+            service2: "ws://localhost:7002/ws",
+            // Add URLs for your 12 services here
+        };
+
+        // Handle service selection change
+        serviceSelect.addEventListener("change", function() {
+            var selectedService = serviceSelect.value;
+            var wsUrl = wsUrls[selectedService];
+            connectWebSocket(wsUrl);
+            // Save the selected service to localStorage
+            localStorage.setItem("selectedService", selectedService);
+        });
+
+        // Handle pause button click
+        pauseButton.addEventListener("click", function() {
+            if (ws) {
+                ws.close();
+                statusSpan.textContent = "Paused";
+            }
+        });
+
+        // Handle resume button click
+        resumeButton.addEventListener("click", function() {
+            if (!ws || ws.readyState === WebSocket.CLOSED) {
+                var selectedService = serviceSelect.value;
+                var wsUrl = wsUrls[selectedService];
+                connectWebSocket(wsUrl);
+            }
+        });
+
+        function connectWebSocket(url) {
+            if (ws) {
+                ws.close();
+            }
+            
+            ws = new WebSocket(url);
+
+            ws.onopen = function() {
+                console.log("Connected to WebSocket");
+                statusSpan.textContent = "Connected";
+                messagesDiv.innerHTML += "<p><strong>Connected!</strong></p>";
+            };
+
+            ws.onmessage = function(event) {
+                if (statusSpan.textContent === "Paused") {
+                    return; // Skip processing messages if paused
+                }
+                console.log("Received message: " + event.data);
+                messagesDiv.innerHTML += "<p>Received: " + event.data + "</p>";
+                messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to bottom
+            };
+
+            ws.onclose = function() {
+                console.log("Disconnected from WebSocket, attempting to reconnect...");
+                statusSpan.textContent = "Disconnected. Reconnecting...";
+                messagesDiv.innerHTML += "<p><strong>Disconnected. Reconnecting...</strong></p>";
+                setTimeout(function() {
+                    connectWebSocket(url);
+                }, 5000); // Reconnect after 5 seconds
+            };
+
+            ws.onerror = function(error) {
+                console.error("WebSocket error observed:", error);
+            };
+        }
+
+        // Check for selected service in localStorage and set it
+        var savedService = localStorage.getItem("selectedService");
+        if (savedService && wsUrls[savedService]) {
+            serviceSelect.value = savedService;
+            connectWebSocket(wsUrls[savedService]);
+        }
+    </script>
+</body>
+</html>

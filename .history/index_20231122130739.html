@@ -22,7 +22,7 @@
         }
 
         #container {
-            max-width: 1000px;
+            max-width: 10000px;
             margin: 0 auto;
             padding: 20px;
             background-color: white;
@@ -33,7 +33,7 @@
             border: 1px solid #ddd;
             margin: 10px 0;
             padding: 10px;
-            height: 700px;
+            height: 300px;
             overflow: auto;
         }
 
@@ -99,14 +99,7 @@
         var pauseButton = document.getElementById("pauseButton");
         var resumeButton = document.getElementById("resumeButton");
 
-        function clearLogs() {
-            messagesDiv.innerHTML = "";
-        }
-
         function connectWebSocket() {
-            // Clear logs when changing services
-            clearLogs();
-
             // Get the selected service from the dropdown
             var selectedService = serviceSelect.value;
 
@@ -118,6 +111,7 @@
 
             ws.onopen = function() {
                 console.log("Connected to WebSocket");
+                messagesDiv.innerHTML += "<p><strong>Connected!</strong></p>";
                 statusSpan.textContent = "Connected";
                 pauseButton.disabled = false;
             };
@@ -130,6 +124,7 @@
 
             ws.onclose = function() {
                 console.log("Disconnected from WebSocket, attempting to reconnect...");
+                messagesDiv.innerHTML += "<p><strong>Disconnected. Reconnecting...</strong></p>";
                 statusSpan.textContent = "Disconnected. Reconnecting...";
                 pauseButton.disabled = true;
                 resumeButton.disabled = true;
@@ -151,15 +146,6 @@
 
             return portMap[serviceName] || 7000; // Default port if not found
         }
-
-        // Event listener for serviceSelect dropdown
-        serviceSelect.addEventListener("change", function() {
-            // Disconnect the current WebSocket and connect to the selected service
-            if (ws) {
-                ws.close();
-            }
-            connectWebSocket();
-        });
 
         // Event listeners for pause and resume buttons
         pauseButton.addEventListener("click", function() {

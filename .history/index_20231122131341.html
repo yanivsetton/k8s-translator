@@ -152,15 +152,6 @@
             return portMap[serviceName] || 7000; // Default port if not found
         }
 
-        // Event listener for serviceSelect dropdown
-        serviceSelect.addEventListener("change", function() {
-            // Disconnect the current WebSocket and connect to the selected service
-            if (ws) {
-                ws.close();
-            }
-            connectWebSocket();
-        });
-
         // Event listeners for pause and resume buttons
         pauseButton.addEventListener("click", function() {
             ws.close();
