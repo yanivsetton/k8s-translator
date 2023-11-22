@@ -37,17 +37,14 @@
             overflow: auto;
         }
 
-        #serviceSelect {
-            margin: 10px 0;
-            padding: 5px;
-            width: 100%;
-        }
-
-        footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
+        .service-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-right: 10px;
         }
 
         #status {
@@ -70,15 +67,6 @@
             white-space: pre;
         }
 
-        button {
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-        }
-
         button:disabled {
             background-color: #ccc;
             cursor: not-allowed;
@@ -91,27 +79,23 @@
     </header>
     
     <div id="container">
-        <!-- Service Selection Dropdown -->
-        <select id="serviceSelect">
-            <option value="service1">AutoScale</option>
-            <option value="service2">Secrets</option>
-            <option value="service3">Deployments</option>
-            <option value="service4">Ingress</option>
-            <option value="service5">Jobs and CronJobs</option>
-            <option value="service6">Main</option>
-            <option value="service7">Nodes</option>
-            <option value="service8">Pods</option>
-            <option value="service9">PV</option>
-            <option value="service10">RC and Stateful</option>
-            <option value="service11">Resource and Limits</option>
-            <option value="service12">Services</option>
-        </select>
+        <!-- Service Buttons -->
+        <button class="service-button" data-service="service1">AutoScale</button>
+        <button class="service-button" data-service="service2">Secrets</button>
+        <button class="service-button" data-service="service3">Deployments</button>
+        <button class="service-button" data-service="service4">Ingress</button>
+        <button class="service-button" data-service="service5">Jobs and CronJobs</button>
+        <button class="service-button" data-service="service6">Main</button>
+        <button class="service-button" data-service="service7">Nodes</button>
+        <button class="service-button" data-service="service8">Pods</button>
+        <button class="service-button" data-service="service9">PV</button>
+        <button class="service-button" data-service="service10">RC and Stateful</button>
+        <button class="service-button" data-service="service11">Resource and Limits</button>
+        <button class="service-button" data-service="service12">Services</button>
 
         <div id="messages"></div>
         <footer>
             <p>Status: <span id="status">Connecting...</span></p>
-            <button id="pauseButton" disabled>Pause</button>
-            <button id="resumeButton" disabled>Resume</button>
         </footer>
     </div>
 
@@ -119,24 +103,19 @@
         // Your JavaScript code goes here
         var ws;
         var messagesDiv = document.getElementById("messages");
-        var serviceSelect = document.getElementById("serviceSelect");
+        var serviceButtons = document.querySelectorAll(".service-button");
         var statusSpan = document.getElementById("status");
-        var pauseButton = document.getElementById("pauseButton");
-        var resumeButton = document.getElementById("resumeButton");
 
         function clearLogs() {
             messagesDiv.innerHTML = "";
         }
 
-        function connectWebSocket() {
+        function connectWebSocket(service) {
             // Clear logs when changing services
             clearLogs();
 
-            // Get the selected service from the dropdown
-            var selectedService = serviceSelect.value;
-
             // Construct the WebSocket URL based on the selected service
-            var wsUrl = "ws://localhost:" + getServicePort(selectedService) + "/ws";
+            var wsUrl = "ws://localhost:" + getServicePort(service) + "/ws";
 
             // Create a WebSocket connection
             ws = new WebSocket(wsUrl);
@@ -144,7 +123,6 @@
             ws.onopen = function() {
                 console.log("Connected to WebSocket");
                 statusSpan.textContent = "Connected";
-                pauseButton.disabled = false;
             };
 
             ws.onmessage = function(event) {
@@ -176,9 +154,9 @@
             ws.onclose = function() {
                 console.log("Disconnected from WebSocket, attempting to reconnect...");
                 statusSpan.textContent = "Disconnected. Reconnecting...";
-                pauseButton.disabled = true;
-                resumeButton.disabled = true;
-                setTimeout(connectWebSocket, 5000); // Reconnect after 5 seconds
+                setTimeout(function() {
+                    connectWebSocket(service); // Reconnect
+                }, 5000); // Reconnect after 5 seconds
             };
 
             ws.onerror = function(error) {
@@ -207,31 +185,23 @@
             return portMap[serviceName] || 7000; // Default port if not found
         }
 
-        // Event listener for serviceSelect dropdown
-        serviceSelect.addEventListener("change", function() {
-            // Disconnect the current WebSocket and connect to the selected service
-            if (ws) {
-                ws.close();
-            }
-            connectWebSocket();
+        // Event listeners for service buttons
+        serviceButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                // Disconnect the current WebSocket and connect to the selected service
+                if (ws) {
+                    ws.close();
+                }
+                var selectedService = button.getAttribute("data-service");
+                connectWebSocket(selectedService);
+            });
         });
 
-        // Event listeners for pause and resume buttons
-        pauseButton.addEventListener("click", function() {
-            ws.close();
-            pauseButton.disabled = true;
-            resumeButton.disabled = false;
-            statusSpan.textContent = "Paused";
-        });
-
-        resumeButton.addEventListener("click", function() {
-            connectWebSocket();
-            pauseButton.disabled = false;
-            resumeButton.disabled = true;
-        });
-
-        // Initial connection
-        connectWebSocket();
+        // Initial connection to the first service
+        if (serviceButtons.length > 0) {
+            var initialService = serviceButtons[0].getAttribute("data-service");
+            connectWebSocket(initialService);
+        }
     </script>
 </body>
 </html>

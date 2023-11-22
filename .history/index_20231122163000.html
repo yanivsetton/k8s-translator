@@ -66,10 +66,6 @@
             color: orange;
         }
 
-        .json {
-            white-space: pre;
-        }
-
         button {
             padding: 10px 20px;
             background-color: #333;
@@ -105,6 +101,7 @@
             <option value="service10">RC and Stateful</option>
             <option value="service11">Resource and Limits</option>
             <option value="service12">Services</option>
+            <!-- Add options for your 12 services here -->
         </select>
 
         <div id="messages"></div>
@@ -149,7 +146,7 @@
 
             ws.onmessage = function(event) {
                 console.log("Received message: " + event.data);
-
+                
                 // Add CSS classes to the logs based on content
                 var logMessage = event.data;
                 if (logMessage.includes("ERROR")) {
@@ -159,17 +156,8 @@
                 } else if (logMessage.includes("WARNING")) {
                     logMessage = "<span class='warning'>" + logMessage + "</span>";
                 }
-
-                // Try to parse the JSON and format it nicely
-                try {
-                    var jsonObject = JSON.parse(logMessage);
-                    logMessage = JSON.stringify(jsonObject, null, 2);
-                    logMessage = "<pre class='json'>" + logMessage + "</pre>";
-                } catch (error) {
-                    // Not valid JSON, leave it as is
-                }
-
-                messagesDiv.innerHTML += "<p>" + logMessage + "</p>";
+                
+                messagesDiv.innerHTML += logMessage + "<br>";
                 messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to bottom
             };
 

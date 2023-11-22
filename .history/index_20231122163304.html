@@ -66,10 +66,6 @@
             color: orange;
         }
 
-        .json {
-            white-space: pre;
-        }
-
         button {
             padding: 10px 20px;
             background-color: #333;
@@ -160,15 +156,6 @@
                     logMessage = "<span class='warning'>" + logMessage + "</span>";
                 }
 
-                // Try to parse the JSON and format it nicely
-                try {
-                    var jsonObject = JSON.parse(logMessage);
-                    logMessage = JSON.stringify(jsonObject, null, 2);
-                    logMessage = "<pre class='json'>" + logMessage + "</pre>";
-                } catch (error) {
-                    // Not valid JSON, leave it as is
-                }
-
                 messagesDiv.innerHTML += "<p>" + logMessage + "</p>";
                 messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to bottom
             };
@@ -201,7 +188,6 @@
                 "service10": 7010,
                 "service11": 7011,
                 "service12": 7012,
-                // Add port mappings for your other services here
             };
 
             return portMap[serviceName] || 7000; // Default port if not found

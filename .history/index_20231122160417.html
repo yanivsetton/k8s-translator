@@ -33,7 +33,7 @@
             border: 1px solid #ddd;
             margin: 10px 0;
             padding: 10px;
-            height: 500px;
+            height: 600px;
             overflow: auto;
         }
 
@@ -52,22 +52,6 @@
 
         #status {
             flex-grow: 1;
-        }
-
-        .error {
-            color: red;
-        }
-
-        .info {
-            color: green;
-        }
-
-        .warning {
-            color: orange;
-        }
-
-        .json {
-            white-space: pre;
         }
 
         button {
@@ -102,9 +86,10 @@
             <option value="service7">Nodes</option>
             <option value="service8">Pods</option>
             <option value="service9">PV</option>
-            <option value="service10">RC and Stateful</option>
+            <option value="service10">RC and Statefull</option>
             <option value="service11">Resource and Limits</option>
             <option value="service12">Services</option>
+            <!-- Add options for your 12 services here -->
         </select>
 
         <div id="messages"></div>
@@ -149,27 +134,7 @@
 
             ws.onmessage = function(event) {
                 console.log("Received message: " + event.data);
-
-                // Add CSS classes to the logs based on content
-                var logMessage = event.data;
-                if (logMessage.includes("ERROR")) {
-                    logMessage = "<span class='error'>" + logMessage + "</span>";
-                } else if (logMessage.includes("INFO")) {
-                    logMessage = "<span class='info'>" + logMessage + "</span>";
-                } else if (logMessage.includes("WARNING")) {
-                    logMessage = "<span class='warning'>" + logMessage + "</span>";
-                }
-
-                // Try to parse the JSON and format it nicely
-                try {
-                    var jsonObject = JSON.parse(logMessage);
-                    logMessage = JSON.stringify(jsonObject, null, 2);
-                    logMessage = "<pre class='json'>" + logMessage + "</pre>";
-                } catch (error) {
-                    // Not valid JSON, leave it as is
-                }
-
-                messagesDiv.innerHTML += "<p>" + logMessage + "</p>";
+                messagesDiv.innerHTML += "<p>Received: " + event.data + "</p>";
                 messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to bottom
             };
 
@@ -201,6 +166,7 @@
                 "service10": 7010,
                 "service11": 7011,
                 "service12": 7012,
+
                 // Add port mappings for your other services here
             };
 
