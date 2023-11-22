@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"path/filepath"
@@ -45,7 +46,12 @@ func watchIngressEvents(clientset *kubernetes.Clientset) {
 
 	fmt.Println("Watching for Ingress events...")
 	for event := range watchInterface.ResultChan() {
-		fmt.Printf("Event: %v\n", event.Type)
-		fmt.Printf("Details: %v\n", event.Object)
+		jsonEvent, err := json.Marshal(event)
+		if err != nil {
+			fmt.Printf("Error encoding event: %s\n", err)
+			continue
+		}
+
+		fmt.Println(string(jsonEvent))
 	}
 }
