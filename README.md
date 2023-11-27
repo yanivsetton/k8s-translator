@@ -1,4 +1,4 @@
-# k8s-translator-ui
+# k8s-translator
 # Kubernetes Event WebSocket Streamer
 
 This Go script provides a simple WebSocket server that streams Kubernetes events in real-time. It watches for events in a Kubernetes cluster and sends them to connected WebSocket clients. The script is designed to be used in conjunction with Kubernetes clusters, making it useful for monitoring and debugging Kubernetes workloads.
@@ -18,8 +18,8 @@ Before running this script, make sure you have the following prerequisites insta
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yanivsetton/k8s-translator-ui.git
-   cd k8s-translator-ui
+   git clone https://github.com/yanivsetton/k8s-translator.git
+   cd k8s-translator
    go build -o translator
    ./translator
    ```
