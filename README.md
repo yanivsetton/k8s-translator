@@ -1,4 +1,4 @@
-![Build Status](https://github.com/yanivsetton/k8s-translator/workflows/CI/CD/badge.svg)
+![Build Status](https://github.com/yanivsetton/k8s-translator/actions/workflows/go.yml/badge.svg)
 
 # k8s-translator
 # Kubernetes Event WebSocket Streamer
