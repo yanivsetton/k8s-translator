@@ -1,0 +1,18 @@
+# Use an official Golang runtime as a parent image
+FROM golang:latest
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the local source files into the container
+COPY . .
+
+WORKDIR /app/eventsRecorder
+
+RUN chmod a+x ./runServices.sh
+
+# Expose ports 7001-7012 for the application
+EXPOSE 7001-7012
+
+# Command to run the Go application
+CMD ["./runServices.sh&"]

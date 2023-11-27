@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket JSON Logs Viewer</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        #container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #messages {
+            border: 1px solid #333;
+            margin: 10px 0;
+            padding: 10px;
+            height: 500px;
+            overflow: auto;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+        }
+
+        .command-line {
+            background-color: #000;
+            padding: 5px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        select#serviceSelect {
+            color: #0f0;
+            background-color: #000;
+            border: none;
+        }
+
+        .error {
+            color: #f00;
+        }
+
+        .info {
+            color: #00f;
+        }
+
+        .warning {
+            color: #ff0;
+        }
+
+        .json {
+            white-space: pre;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        label {
+            color: #0f0;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WebSocket JSON Logs Viewer</h1>
+    </header>
+    
+    <div id="container">
+        <div id="messages"></div>
+        <div class="command-line">
+            <label for="serviceSelect">Service:</label>
+            <select id="serviceSelect">
+                <option value="AutoScale">AutoScale</option>
+                <option value="Secrets">Secrets</option>
+                <option value="Deployments">Deployments</option>
+                <option value="Ingress">Ingress</option>
+                <option value="Jobs and CronJobs">Jobs and CronJobs</option>
+                <option value="Main">Main</option>
+                <option value="Nodes">Nodes</option>
+                <option value="Pods">Pods</option>
+                <option value="PV">PV</option>
+                <option value="RC and Stateful">RC and Stateful</option>
+                <option value="Resource and Limits">Resource and Limits</option>
+                <option value="Services">Services</option>
+                <!-- Add more service options here -->
+            </select>
+        </div>
+        <footer>
+            <p>Status: <span id="status">Connecting...</span></p>
+            <button id="pauseButton" disabled>Pause</button>
+            <button id="resumeButton" disabled>Resume</button>
+        </footer>
+    </div>
+
+    <script>
+        // Your JavaScript code goes here
+        var ws;
+        var messagesDiv = document.getElementById("messages");
+        var serviceSelect = document.getElementById("serviceSelect");
+        var statusSpan = document.getElementById("status");
+        var pauseButton = document.getElementById("pauseButton");
+        var resumeButton = document.getElementById("resumeButton");
+
+        function clearLogs() {
+            messagesDiv.innerHTML = "";
+        }
+
+        function connectWebSocket() {
+            // Clear logs when changing services
+            clearLogs();
+
+            // Get the selected service from the dropdown
+            var selectedService = serviceSelect.value;
+
+            // Construct the WebSocket URL based on the selected service
+            var wsUrl = "ws://localhost:" + getServicePort(selectedService) + "/ws";
+
+            // Create a WebSocket connection
+            ws = new WebSocket(wsUrl);
+
+            ws.onopen = function() {
+                console.log("Connected to WebSocket");
+                statusSpan.textContent = "Connected";
+                pauseButton.disabled = false;
+            };
+
+            ws.onmessage = function(event) {
+                console.log("Received message: " + event.data);
+
+                // Add CSS classes to the logs based on content
+                var logMessage = event.data;
+                if (logMessage.includes("ERROR")) {
+                    logMessage = "<span class='error'>" + logMessage + "</span>";
+                } else if (logMessage.includes("INFO")) {
+                    logMessage = "<span class='info'>" + logMessage + "</span>";
+                } else if (logMessage.includes("WARNING")) {
+                    logMessage = "<span class='warning'>" + logMessage + "</span>";
+                }
+
+                // Try to parse the JSON and format it nicely
+                try {
+                    var jsonObject = JSON.parse(logMessage);
+                    logMessage = JSON.stringify(jsonObject, null, 2);
+                    logMessage = "<pre class='json'>" + logMessage + "</pre>";
+                } catch (error) {
+                    // Not valid JSON, leave it as is
+                }
+
+                messagesDiv.innerHTML += "<p>" + logMessage + "</p>";
+                messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to bottom
+            };
+
+            ws.onclose = function() {
+                console.log("Disconnected from WebSocket, attempting to reconnect...");
+                statusSpan.textContent = "Disconnected. Reconnecting...";
+                pauseButton.disabled = true;
+                resumeButton.disabled = true;
+                setTimeout(connectWebSocket, 5000); // Reconnect after 5 seconds
+            };
+
+            ws.onerror = function(error) {
+                console.error("WebSocket error observed:", error);
+            };
+        }
+
+        function getServicePort(serviceName) {
+            // Define the port mapping for your services
+            var portMap = {
+                "AutoScale": 7001,
+                "Secrets": 7002,
+                "Deployments": 7003,
+                "Ingress": 7004,
+                "Jobs and CronJobs": 7005,
+                "Main": 7006,
+                "Nodes": 7007,
+                "Pods": 7008,
+                "PV": 7009,
+                "RC and Stateful": 7010,
+                "Resource and Limits": 7011,
+                "Services": 7012,
+                // Add port mappings for your other services here
+            };
+
+            return portMap[serviceName] || 7000; // Default port if not found
+        }
+
+        // Event listener for serviceSelect dropdown
+        serviceSelect.addEventListener("change", function() {
+            // Disconnect the current WebSocket and connect to the selected service
+            if (ws) {
+                ws.close();
+            }
+            connectWebSocket();
+        });
+
+        // Event listeners for pause and resume buttons
+        pauseButton.addEventListener("click", function() {
+            ws.close();
+            pauseButton.disabled = true;
+            resumeButton.disabled = false;
+            statusSpan.textContent = "Paused";
+        });
+
+        resumeButton.addEventListener("click", function() {
+            connectWebSocket();
+            pauseButton.disabled = false;
+            resumeButton.disabled = true;
+        });
+
+        // Initial connection
+        connectWebSocket();
+    </script>
+</body>
+</html>

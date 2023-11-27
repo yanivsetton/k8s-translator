@@ -1,0 +1,20 @@
+# Use an official Golang runtime as a parent image
+FROM golang:latest
+RUN apt-get update && \
+    apt-get install -y awscli && \
+    rm -rf /var/lib/apt/lists/*
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the local source files into the container
+COPY . .
+
+WORKDIR /app/eventsRecorder
+
+RUN chmod a+x ./runServices.sh && go run ./pods.go
+
+# Expose ports 7001-7012 for the application
+EXPOSE 7001-7012
+
+# Command to run the Go application
+CMD ["./runServices.sh"]
